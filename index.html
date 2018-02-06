@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman Game</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	
+</head>
+<body>
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-lg-6">
+				<div class="card">
+					<h3 class="card-title">Game</h3>
+					<p>This is a hangman game.</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="card">
+					<h3 class="card-title">Word</h3>
+					<div id="word" class="display">Placeholder</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="card">
+					<h3 class="card-title">Guessed Letters</h3>
+					<div id="guesses"> </div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="card">
+					<h3 class="card-title">Guessed Count</h3>
+					<div id="guess-count"> </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="card">
+					<h3 class="card-title">Win Count</h3>
+					<div id="win-count"> </div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="d-flex justify-content-center">
+		<div id="overlay">
+	  		<div>
+	  			<h3>You Lose!</h3>
+	      		<p>Play again?</p>
+	      		<button type="button" class="btn btn-primary" id="play-again">Yes</button>
+	      		<button type="button" class="btn btn-secondary" id="quit">No</button>
+	  		</div>
+	 	</div>
+	</div>
+
+
+<!-- These scripts are for bootstrap only -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- End of bootstrap scripts -->
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>

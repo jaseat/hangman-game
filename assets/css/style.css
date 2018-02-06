@@ -1,0 +1,17 @@
+.display{
+	letter-spacing: 5px;
+}
+
+ #overlay {
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    width:auto
+    height:auto;
+    text-align:center;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 20px 20px 40px 1px #656565;
+    padding: 10px;
+    border: 1px solid #aaa;
+ }
