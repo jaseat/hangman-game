@@ -1,17 +1,118 @@
+  @font-face {
+ 	font-family:"Final Fantasy Script Collection - Final Fantasy VII";
+ 	src:url("../font/Final_Fantasy_VII.eot?") format("eot"),
+ 	url("../font/Final_Fantasy_VII.woff") format("woff"),
+ 	url("../font/Final_Fantasy_VII.ttf") format("truetype"),
+ 	url("../font/Final_Fantasy_VII.svg#FinalFantasyVII") format("svg");
+ 	font-weight:normal;
+ 	font-style:normal;
+ }
+
+   @font-face {
+ 	font-family:"Final Fantasy";
+ 	src:url("../font/ferrum.otf") format("opentype");
+ 	font-weight:normal;
+ 	font-style:normal;
+ }
+
+
+body{
+	font-family: "Final Fantasy Script Collection - Final Fantasy VII";
+	font-size: 32px;
+	background: linear-gradient(to bottom, #000, #333);
+}
+
 .display{
 	letter-spacing: 5px;
 }
 
  #overlay {
+ 	color: #fff;
     visibility: hidden;
     position: absolute;
-    top: 50px;
+    top: 300px;
     width:auto
     height:auto;
     text-align:center;
     z-index: 1000;
-    background-color: #fff;
-    box-shadow: 20px 20px 40px 1px #656565;
     padding: 10px;
-    border: 1px solid #aaa;
  }
+
+.ff-menu{
+	border-radius: 5px;
+    background: linear-gradient(to bottom right, #0002c2, #02010f);
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+#head-img{
+ 	text-align: center;
+}
+
+.wrapper{
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+
+}
+
+#head-img img{
+	display: block;
+	width: auto;
+	height: 154px;
+
+}
+
+#head-img h3{
+	font-family: "Final Fantasy";
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+}
+
+#canvas-wrapper{
+	text-align: center;
+}
+
+#myCanvas{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	height: 540px;
+	border: 3px solid #222;
+/*	background-image: url("../images/battle_bg.png");*/
+}
+
+#word-box{
+	display: none;
+	color: #fff;
+	position: absolute;
+	left: 15%;
+	width: 70%;
+	top: 10px;
+}
+
+#guess-box{
+	display: none;
+	color: #fff;
+	position: absolute;
+	left: 1px;
+	width: 40%;
+	bottom: -15px;
+}
+
+#count-box{
+	display: none;
+	color: #fff;
+	position: absolute;
+	right: 1px;
+	width: 60%;
+	bottom: -15px;
+}
+
+#start-btn{
+	position: absolute;
+	top: 50%;
+}

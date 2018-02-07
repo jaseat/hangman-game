@@ -8,45 +8,55 @@
 	
 </head>
 <body>
+	<div id="head-img">
+		<div class="wrapper">
+			<img src="assets/images/FFVII_Logo.jpg" alt="">
+			<h3>Hangman</h3>
+		</div>
+	</div>
+
+	<div id="canvas-wrapper">
+		<div class="wrapper">
+			<canvas id="myCanvas"></canvas>
+			<button id="start-btn" class="cursor-hover">NEW GAME</button>
+			<div class="ff-menu" id="word-box">
+				<h1>Word</h1>
+				<div id="word" class="display">Placeholder</div>
+			</div>
+			<div class="ff-menu" id="guess-box">
+				<h3>Guessed Letters</h3>
+				<div id="guesses"> </div>
+			</div>
+			<div class="ff-menu" id="count-box">
+				<h3>Health</h3>
+				<span style="text-align: left;">Cloud: </span><span id="guess-count"> </span>
+			</div>
+		</div>
+	</div>
+
 	<div class="container">
 
 		<div class="row">
-
 			<div class="col-lg-6">
-				<div class="card">
-					<h3 class="card-title">Game</h3>
-					<p>This is a hangman game.</p>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="card">
-					<h3 class="card-title">Word</h3>
-					<div id="word" class="display">Placeholder</div>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="card">
-					<h3 class="card-title">Guessed Letters</h3>
-					<div id="guesses"> </div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="card">
-					<h3 class="card-title">Guessed Count</h3>
-					<div id="guess-count"> </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="card">
-					<h3 class="card-title">Win Count</h3>
+				<div class="card ff-menu">
+					<h1 class="card-title">Win Count</h1>
 					<div id="win-count"> </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="ff-menu">
+					<h1>How to play</h1>
+					<p>Click new game to start new game</p>
+					<p>Press keys to make guesses (only alphabetic keys are accepted)</p>
+					<p>Each stage you start with 10 health</p>
+					<p>Every incorrect guess you lose health</p>
+					<p>Depending on the stage you may lose more health per guess</p>
+					<p>There are six stages in total</p>
+					<p>After finishing all six the game loops back to the beginning</p>
+					<p>(Hint: for playtesting check the console for the currently hidden word)</p>
 				</div>
 			</div>
 		</div>
@@ -55,12 +65,12 @@
 
 
 	<div class="d-flex justify-content-center">
-		<div id="overlay">
+		<div id="overlay" class="ff-menu">
 	  		<div>
-	  			<h3>You Lose!</h3>
-	      		<p>Play again?</p>
-	      		<button type="button" class="btn btn-primary" id="play-again">Yes</button>
-	      		<button type="button" class="btn btn-secondary" id="quit">No</button>
+	  			<h1>GAME OVER</h1>
+	      		<p>Continue?</p>
+	      		<button type="button" class="btn btn-primary cursor-hover" id="play-again">Yes</button>
+	      		<button type="button" class="btn btn-secondary cursor-hover" id="quit">No</button>
 	  		</div>
 	 	</div>
 	</div>
