@@ -63,10 +63,11 @@ var game = {
 		this.currentWord = this.words[Math.floor(Math.random()*this.words.length)];
 		console.log(this.currentWord);
 		
-		audioManager.switch(this.stage[this.currentStage].song);
+		var sw = audioManager.switch(this.stage[this.currentStage].song);
 		this.guessWord = [];
 		this.guesses = ": ";
-		this.guessCount = 10;
+		if(sw == 1)
+			this.guessCount = 10;
 		for(var i = 0; i < this.currentWord.length; i++){	
 			if(this.currentWord[i] == " "){
 				this.guessWord[i] = " ";
@@ -173,6 +174,7 @@ var game = {
 		this.stop();
 		this.currentAudio = this.audio[audio];
 		this.play();
+		return 1;
 	}
 };
 
@@ -283,8 +285,13 @@ var bossStage = new stage(rufusObj, "boss");
 game.stage.push(soldierStage);
 game.stage.push(soldierStage);
 game.stage.push(bossStage);
+game.stage.push(bossStage);
+game.stage.push(bossStage);
 game.stage.push(soldierStage);
 game.stage.push(soldierStage);
+game.stage.push(sephirotStage);
+game.stage.push(sephirotStage);
+game.stage.push(sephirotStage);
 game.stage.push(sephirotStage);
 
 
