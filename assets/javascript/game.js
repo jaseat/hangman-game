@@ -272,7 +272,7 @@ var sephirotObj = new obj(sephirot, function(){render.context.drawImage(sephirot
 
 var rufus = document.createElement("img");
 rufus.src = "assets/images/rufus.png";
-var rufusObj = new obj(rufus, function(){render.context.drawImage(rufus, enemyPos.x, enemyPos.y);}, 4)
+var rufusObj = new obj(rufus, function(){render.context.drawImage(rufus, enemyPos.x, enemyPos.y);}, 2)
 
 var cloud = document.createElement("img");
 cloud.src = "assets/images/cloud_sprite.png";
