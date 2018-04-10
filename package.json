@@ -2,7 +2,7 @@
   "name": "hangman",
   "version": "1.0.0",
   "description": "A hangman game using constructors for JavaScript objects.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^5.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaseat/hangman.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaseat/hangman/issues"
+  },
+  "homepage": "https://github.com/jaseat/hangman#readme"
 }
