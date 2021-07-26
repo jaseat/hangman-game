@@ -1,0 +1,2 @@
+# Hangman Game with Constructors
+This is a simple hangman game using JavaScript constructors. The command prompt accepts single character inputs only. The game ends either when the terminal is closed or when the player uses up all 10 guesses.
