@@ -57,6 +57,7 @@ var game = {
 		this.winCount = 0;
 		this.setWord();
 		this.guessCount = 10;
+		this.print();
 		document.onkeyup = interface.keyUp;
 	},
 
