@@ -56,6 +56,7 @@ var game = {
 		audioManager.switch(this.stage[this.currentStage].song);
 		this.winCount = 0;
 		this.setWord();
+		this.guessCount = 10;
 		document.onkeyup = interface.keyUp;
 	},
 
